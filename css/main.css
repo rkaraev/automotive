@@ -1,0 +1,482 @@
+:root {
+    --white-color: #ffffff;
+    --grey-color: #efefef;
+    --red-light-color: #dd2211;
+    --red-heavy-color: #c62314;
+    --dark-light-color: #161616;
+    --dark-heavy-color: #130e27;
+    --font-first-family: "PT Serif", sans-serif;
+    --font-second-family: "Montserrat", sans-serif;
+    --font-third-family: "Fira Code", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* *, *:before, *:after {
+    outline: solid 1px #000;
+} */
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-second-family);
+    font-size: 20px;
+}
+
+.text-h1 {
+    font-family: var(--font-second-family);
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 91%;
+    letter-spacing: -0.02em;
+}
+
+.text-h2 {
+    font-family: var(--font-second-family);
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: -0.02em;
+}
+
+.text-p {
+    font-family: var(--font-first-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+/* Далее стили для раздела header: */
+
+.header {
+    min-height: 680px;
+    background-color: var(--red-light-color);
+    background-image: url(../img/header-bg.jpg);
+}
+
+.header-container {
+    max-width: 1090px;
+}
+
+.description__logo-menu {
+    padding-top: 40px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description__logo {
+    padding-left: 15px;
+}
+
+.description__menu-nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.description__menu-nav-item {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+.description__menu-nav-item:hover {
+	background-color: var(--dark-heavy-color);
+	border-radius: 5px;
+}
+
+.description__menu-nav li {
+	margin-right: 3px;
+}
+
+.description__menu-nav li:last-child {
+	margin-right: 0;
+}
+
+.description__text {
+    padding-left: 15px;
+}
+
+.header-h1 {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: var(--white-color)
+}
+
+.header-span {
+    color:  var(--dark-heavy-color);
+}
+
+.header-p {
+    max-width: 490px;
+    color: var(--white-color);
+}
+
+/* Далее стили для раздела Our services: */
+
+.our-services {
+    min-height: 520px;
+}
+
+.our-services-h2 {
+    padding-top: 50px;
+    margin-bottom: 85px;
+    text-transform: uppercase;
+    color: var(--dark-heavy-color);
+}
+
+.our-services-span {
+    color: var(--red-heavy-color);
+}
+
+.our-services__groups {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: end;
+    gap: 115px;
+}
+
+.our-services__group-img {
+    margin: 0 auto 43px;
+}
+
+.our-services__group-p {
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+/* Далее стили для раздела Our story: */
+
+.our-story {
+    min-height: 124px;
+    background-color: var(--dark-heavy-color);
+}
+
+.our-story__items {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-story__p {
+    max-width: 611px;
+    color: var(--white-color);
+}
+
+.our-story__btn {
+    background-color: var(--red-heavy-color);
+    width: 270px;
+    height: 64px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: var(--font-second-family);
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 22px;
+}
+
+/* Далее стили для раздела Pricing: */
+
+.pricing {
+    min-height: 691px;
+    background-color: var(--grey-color);
+}
+.pricing-h2 {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-heavy-color);
+}
+.pricing__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.pricing__card {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    max-width: 340px;
+    text-align: center;
+    background-color: var(--white-color);
+}
+.pricing__card-title {
+    margin-bottom: 34px;
+    color: var(--dark-light-color);
+    font-size: 22px;
+    line-height: 127%;
+    letter-spacing: -0.03em;
+}
+.pricing__card-price {
+    margin-bottom: 30px;
+    font-family: var(--font-second-family);
+    color: var(--red-heavy-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+}
+.pricing__card-description {
+    margin-bottom: 40px;
+    list-style: none;
+    padding: 0;
+    font-family: var(--font-first-family);
+    color: var(--dark-light-color);
+    text-transform: capitalize;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+}
+.pricing__card-btn {
+    background-color: var(--dark-heavy-color);
+    width: 205px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: var(--font-second-family);
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.pricing__card-btn:hover {
+    background-color: var(--red-heavy-color);
+}
+
+/* Далее стили для раздела Footer: */
+
+.footer {
+    min-height: 190px;
+    background-color: var(--dark-heavy-color);
+}
+
+.footer__items {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-p {
+    color: var(--white-color);
+    letter-spacing: -0.01em;
+}
+
+.footer-span{
+    color: var(--red-heavy-color);
+}
+
+/* Далее стили для адаптивности: */
+
+@media screen and (max-width: 1200px) {
+    .description {
+        padding: 0 50px;
+    }
+
+    .our-story {
+        min-height: 100%;
+    }
+
+    .our-story__items {
+        padding: 30px 50px;
+        flex-direction: column;
+    }
+
+    .our-story__p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer {
+        min-height: 100%;
+    }
+    
+    .footer__items {
+        padding: 50px 50px;
+        flex-direction: column;
+    }
+
+    .footer-p {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .our-services {
+        min-height: 100%;
+    }
+    
+    .our-services-h2 {
+        text-align: center;
+    }
+    
+    .our-services__groups {
+        padding: 0 50px 50px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .our-services__group-p {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .pricing {
+        min-height: 100%;
+    }
+    .pricing-h2 {
+    }
+    .pricing__cards {
+        padding: 0 50px 50px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header {
+        min-height: 100%;
+    }
+
+    .description__logo-menu {
+        padding-top: 50px;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .description__menu-nav {
+        justify-content: center;
+    }
+
+    .description__text {
+        text-align: center;
+    }
+
+    .header-h1 {
+        font-size: 70px;
+        margin-bottom: 25px;
+    }
+
+    .header-p {
+        padding-bottom: 50px;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pricing__cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+
+    .pricing__card {
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .description__menu-nav-item {
+        font-size: 16px;
+    }
+    
+    .header-h1 {
+        font-size: 50px;
+    }
+
+    .header-p {
+        font-size: 16px;
+    }
+
+    .our-story__p {
+        font-size: 18px;
+    }
+
+    .our-story__btn {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .footer-p {
+        font-size: 18px;
+    }
+
+    .our-services__groups {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pricing__card {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .description__menu-nav-item {
+        font-size: 14px;
+    }
+
+    .header-h1 {
+        font-size: 40px;
+    }
+
+    .header-p {
+        font-size: 14px;
+    }
+
+    .our-story__p {
+        font-size: 16px;
+    }
+
+    .our-story__btn {
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .footer-p {
+        font-size: 16px;
+    }
+
+    .our-services__group-p {
+        font-size: 18px;
+    }
+
+    .pricing__card {
+        min-width: 200px;
+    }
+
+    .pricing__card-btn {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    } 
+}
